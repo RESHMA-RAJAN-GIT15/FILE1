@@ -1,0 +1,22 @@
+select * from customers where country= 'Germany' and (city= 'berlin' or city= 'Stuttgart')
+
+
+10/01/24
+
+select studentcourse.course_id,student.name,student.age FROM Studentcourse innerjoin Student
+on Student.roll_no=Studentcourse.Roll_no;
+
+
+
+2-Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+Input Format
+
+The CITY and COUNTRY tables are described as follows:
+
+
+
+
+select sum(population) from city.population inner join country.population on  continent ="asia";
