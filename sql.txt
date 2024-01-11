@@ -17,6 +17,5 @@ Input Format
 The CITY and COUNTRY tables are described as follows:
 
 
+select sum(population ) from city where CITY.CountryCode = COUNTRY.Code and country.continent ="asia";
 
-
-select sum(population) from city.population inner join country.population on  continent ="asia";
